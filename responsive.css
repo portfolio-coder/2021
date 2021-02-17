@@ -1,0 +1,36 @@
+/* タブレット向けレイアウト */
+@media(max-width: 1000px){
+    .workexperience{
+        width: 50%;
+    }
+    .wors-details{
+        width: 50%;
+    }
+    .txt-contents{
+        width: 50%;
+    }
+}
+
+/* スマホ向けレイアウト */
+@media(max-width: 670px){
+    .workexperience{
+        width: 100%;
+    }
+    .wors-details{
+        width: 100%;
+    }
+    .header-right{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .self-introduction{
+        float: none;
+        padding: 70px 0;
+        text-align: center;
+    }
+    footer{
+        text-align: center;
+    }
+}
