@@ -42,10 +42,6 @@ header{
   color: white;
 }
 
-.far{
-  margin-right: 5px;
-}
-
 .menu-icon {
   color: white;
   float: right;
@@ -303,9 +299,10 @@ header{
 
 .icon_area{
   padding: 30px 0;
+  color: #666666 ;
 }
 
-.mail{
+.mail, .twitter{
   margin-right: 40px;
 }
 
@@ -316,10 +313,6 @@ header{
 
 .contact-icon i:hover{
   color: #c0c0c0 ; 
-}
-
-.twitter{
-  margin-right: 40px;
 }
 
 footer{
