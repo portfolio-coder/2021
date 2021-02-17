@@ -306,12 +306,11 @@ header{
   margin-right: 40px;
 }
 
-.contact-icon i{
+.github i{
   transition: all 1s;
-  color: #666666 ;
 }
 
-.contact-icon i:hover{
+.github i:hover{
   color: #c0c0c0 ; 
 }
 
