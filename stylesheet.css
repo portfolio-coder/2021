@@ -299,7 +299,6 @@ header{
 
 .icon_area{
   padding: 30px 0;
-  color: #666666 ;
 }
 
 .mail, .twitter{
@@ -308,6 +307,7 @@ header{
 
 .contact-icon i{
   transition: all 1s;
+  color: #666666 ;
 }
 
 .contact-icon i:hover{
