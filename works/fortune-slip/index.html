@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>おみくじ</title>
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" href="../../responsive.css">
+    <link rel="icon" href="../../img/favicon.ico" id="favicon">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../img/apple-touch-icon-180x180.png">
+</head>
+<body>
+    <div class="works_description">
+        <div class="wave">
+            <span>お</span>
+            <span>み</span>
+            <span>く</span>
+            <span>じ</span>
+        </div>
+        <div id="btn-wrapper"></div>
+        <div id="btn">今日の運勢</div>
+    </div>
+
+    <script>
+        'use strict';
+
+        {
+            const btn=document.getElementById('btn');
+
+            btn.addEventListener('click',()=>{
+                const results=['大吉','中吉','小吉','末吉','凶'];
+                btn.textContent=results[Math.floor(Math.random()*results.length)];
+                
+                // 確率設定
+                const n=Math.random();
+                if(n<0.05){
+                    btn.textContent='大吉'; //5%
+                }else if(n<0.35){
+                    btn.textContent='中吉'; //30%
+                }else if(n<0.75){
+                    btn.textContent='小吉'; //40%
+                }else if(n<0.90){
+                    btn.textContent='末吉'; //15%
+                }else{
+                    btn.textContent='凶'; //10%
+                }
+            });
+        }
+    </script>
+</body>
+</html>
