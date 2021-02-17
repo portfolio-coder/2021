@@ -1,0 +1,339 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+.clear{
+  clear: left;
+}
+
+header{
+  height: 65px;
+  width: 100%;
+  background-color: rgba(51,51,51,0.9);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.container{
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header-left{
+  float: left;
+}
+
+.header-logo{
+  width: 124px;
+  margin-top: 6px;
+  font-size: 36px;
+  color: white;
+}
+
+.far{
+  margin-right: 5px;
+}
+
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display: none;
+}
+
+.header-right{
+  float: right;
+  margin-right: -25px;
+}
+
+.header-right a{
+  line-height: 65px;
+  padding: 0 20px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 1s;
+}
+
+.header-right a:hover{
+  background-color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+}
+
+.top-wrapper{
+  padding: 260px 0 200px 0;
+  text-align: center;
+}
+
+.top_image{
+  text-align: center;
+}
+
+.about-wrapper{
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.heading{
+  padding-top: 75px;
+  padding-bottom: 50px;
+  color: #5d5f60;
+}
+
+.about_contents{
+  display: table;
+  margin: 0 auto;
+  color: #5f5d60;
+}
+
+.about_contents img{
+  min-width: 80px;
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  opacity: 0.6;
+  border-radius: 15%;
+}
+
+.self-introduction{
+  text-align: left;
+  float: right;
+  padding: 70px 40px;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.mgr-15{
+  margin-right: 15px;
+}
+
+.mgr-30{
+  margin-right: 30px;
+}
+
+.message-wrapper{
+  padding-bottom: 10px;
+}
+
+.message-wrapper ul{
+    list-style: none;
+    color: #5f5d60;
+}
+
+.my-message{
+  padding: 60px 0;
+}
+
+.workexperience-wrapper{
+  text-align: center;
+}
+
+.workexperience{
+  padding-bottom: 80px;
+  background-color: white;
+  float: left;
+  width: 25%;
+}
+
+.img_wrap{
+  width: 200px;
+  height: 160px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 15%;
+}
+
+.img_wrap img{
+  width: 100%;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.img_wrap img:hover{
+  transform: scale(1.2) rotate(9deg);
+  transition-duration: 0.5s;
+}
+
+.txt-contents{
+  width: 70%;
+  display: inline-block;
+  margin: 20px;
+  font-size: 13px;
+  color: #b3aeb5;
+  height: 100px;
+}
+
+.works-wrapper{
+  padding-bottom: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.works_description{
+  margin-top: 110px;
+  color: #605d60;
+}
+
+.wors-details{
+  padding-left: 5%;
+  padding-right: 5%;
+  float: left;
+  width: 25%;
+}
+
+@keyframes wave {
+  100% {
+    transform: translate3d(0, -10px, 0);
+  }
+}
+
+.wave {
+  display: block;
+  width: 150px;
+  margin: 20px auto 0;
+  text-align: center;
+  cursor: default;
+  margin-bottom: 20px;
+}
+
+.wave span {
+  display: inline-block;
+  color: #b3aeb5;
+  font-size: 24px;
+}
+
+.wave:hover span {
+  animation-name: wave;
+  animation-duration: .2s;
+  animation-direction: alternate;
+  animation-iteration-count: 2;
+}
+
+.wave:hover span:nth-child(2) {
+  animation-delay: .1s;
+}
+
+.wave:hover span:nth-child(3) {
+  animation-delay: .2s;
+}
+
+.wave:hover span:nth-child(4) {
+  animation-delay: .3s;
+}
+
+/*ここからおみくじ*/
+#btn{
+  width: 200px;
+  height: 200px;
+  background-color: #cccccc;
+  border-radius: 50%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 200px;
+  color: #ffffff;
+  font-size: 27px;
+  letter-spacing: 3px;
+  cursor: pointer;
+  box-shadow: 0 10px #a7a7a7;
+  user-select: none;
+  margin-bottom: 120px;
+}
+
+#btn:hover{
+  opacity: 0.7;
+}
+
+#btn:active{
+  box-shadow: 0 5px #a7a7a7;
+  position: relative;
+  top: 5px;
+}
+/*ここまでおみくじ*/
+
+/* ここからストップウォッチ付きタイピングゲーム */
+.typing-game {
+  text-align: center;
+}
+
+@font-face {
+  font-family: 'DSEG';
+  src: url('works/typing-game/DSEG7-Classic/DSEG7Classic-Regular.ttf');
+}
+
+#time {
+  font-family: 'DSEG';
+}
+
+#characters {
+  font-size: 2rem;
+}
+
+#typed {
+  color: red;
+}
+/* ここまでストップウォッチ付きタイピングゲーム */
+
+.contact-wrapper{
+  padding-bottom: 60px;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+}
+
+.contact_message{
+  color: #5e605d;
+}
+
+.icon_area{
+  padding: 30px 0;
+}
+
+.mail{
+  margin-right: 40px;
+}
+
+.contact-icon i{
+  transition: all 1s;
+  color: #666666 ;
+}
+
+.contact-icon i:hover{
+  color: #c0c0c0 ; 
+}
+
+.twitter{
+  margin-right: 40px;
+}
+
+footer{
+  background-color: #333333;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.footer-logo{
+  font-size: 30px;
+  color: white;
+}
+
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+}
